@@ -1,0 +1,31 @@
+Python's Turtle graphics library:
+
+import turtle
+
+# Create a turtle object
+t = turtle.Turtle()
+
+# Set the turtle's speed and size
+t.speed(0)
+t.shapesize(2)
+
+# Define the running animation
+def run():
+    t.right(20)
+    t.forward(50)
+    t.left(40)
+    t.forward(50)
+    t.right(20)
+
+# Run the animation 10 times
+for i in range(10):
+    run()
+
+# Hide the turtle
+t.hideturtle()
+
+# Keep the window open until it is closed manually
+turtle.done()
+
+
+This code will create a turtle object and define a run() function that moves the turtle in a running motion. The for loop runs the run() function 10 times to create the animation. Finally, the turtle is hidden and the window is kept open until it is closed manually. You can customize the animation by modifying the run() function or adding more turtle movements.
